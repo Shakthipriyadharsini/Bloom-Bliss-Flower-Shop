@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloom Bliss Flower Shop</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <nav>
+            <div class = "logo">
+                <h1> Bloom Bliss </h1>
+            </div>
+
+            <div class = "nav-links">
+                <a href='#home'>Home</a>
+                <a href='#about'>About</a>
+                <a href='#shop'>Shop</a>
+                <a href='#contact'>Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href='#'>👤</a>
+                <a href='#'>❤️</a>
+                <a href='#cart'>🛒</a>
+            </div>
+        </nav>
+
+        <!--HOME SECTION-->
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Flowers for Every Moment</h1>
+                <p> Beautiful flowers, thoughtfully arranged for every special moment</p>
+                <a href="#shop" class="hero-btn" id="shopBtn"> Shop Now </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero-image1.png" alt="hero-section-image">
+
+            </div>
+
+        </section>
+
+        <!--ABOUT SECTION-->
+        <section class="about" id="about">
+            <div class="about-image">
+                <img src="images/about_sec2.jpg" alt=" "> 
+            </div>
+
+            <div class="about-content">
+                <h2>About Bloom Bliss</h2>
+                <p>At Bloom Bliss, we believe every moment deserves to be celebrated with beautiful flowers</p>
+                <p>From elegant roses to colourful tulips and customisable bouquets, we create every arrangement with love</p>
+                <a href="#shop" class="about-btn">Explore our flowers</a>
+            </div>
+
+        </section>
+
+
+        <!--SHOP SECTION-->
+
+        <section class="categories" id="shop">
+            <h2> Our Collection</h2>
+            <div class="category-container">
+                <div class="cards">
+                    <img src="images/Roses.jpg" alt="rose">
+                    <h3> Roses </h3>
+                    <p> Classic blooms for every occasion </p>
+                    <h4>₹259</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img src="images/Tulips.jpg" alt="tulip">
+                    <h3> Tulips </h3>
+                    <p> Elegant flowers with a delicate touch </p>
+                    <h4>₹299</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img src="images/Sunflowers.jpg" alt="sunflower">
+                    <h3> Sunflowers </h3>
+                    <p> Bright blooms to spread happiness </p>
+                    <h4>₹279</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img src="images/Orchids.jpg" alt="orchid">
+                    <h3> Orchids </h3>
+                    <p> Elegant flowers with a luxurious feel </p>
+                    <h4>₹449</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img src="images/daisy.jpg" alt="daisy">
+                    <h3> Daisy </h3>
+                    <p> Vibrant flowers for brighter moments </p>
+                    <h4>₹289</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+
+                <div class="cards">
+                    <img src="images/chrysanthemum.jpg" alt="chrysanthemum">
+                    <h3> Chrysanthemum </h3>
+                    <p> Layered petals with rich & refined beauty </p>
+                    <h4>₹329</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+
+                 <div class="cards">
+                    <img src="images/Lilies1.jpeg" alt="lily">
+                    <h3> Lilies </h3>
+                    <p> Graceful blooms for special moments </p>
+                    <h4>₹349</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>        
+
+                <div class="cards">
+                    <img src="images/Customise.jpg" alt="custom">
+                    <h3> Customizable Bouquets </h3>
+                    <p> Beautifully arranged with love </p>
+                    <h4>₹599</h4>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--CONTACT SECTION-->
+        
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <p>Have a question or want to create a special bouquet? <br> We'd love to hear from you </p><br>
+
+                <div class="contact-info">
+                    <p> Chennai, Tamil Nadu</p>
+                    <p> +91 98357 24456</p>
+                    <p> bloombliss@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name"><br><br>
+                <input type="email" placeholder="Your Email"><br><br>
+                <input type="text" placeholder="Your Mobile number"><br><br>
+                <textarea placeholder="Your Message"></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </div>
+
+        </section>
+
+        <!-- CART SIDE BAR -->
+
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button id="closeCart">X</button>
+            </div>
+
+            <div id="cartItems"></div>
+
+            <div class="cart-bottom">
+                <h3>Total: ₹<span id="cartTotal">0</span></h3>
+                <button>CheckOut</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+
+    </body>
+    
+</html>
